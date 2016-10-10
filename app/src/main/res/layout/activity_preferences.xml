@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.PreferencesActivity">
+
+    <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+        android:id="@+id/text_header_my_preferences"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red_background_color"
+        android:gravity="center"
+        android:text="MY PREFERENCES"
+        android:textColor="@color/white_text_color" />
+
+    <ListView
+        android:id="@+id/listview_my_preferences"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_bottom_buttons_my_preferences"
+        android:layout_below="@+id/text_header_my_preferences">
+
+
+    </ListView>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom_buttons_my_preferences"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/btn_back_my_preferences"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_arrow_grey"
+            android:gravity="center"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn_save_my_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_back_my_preferences"
+            android:background="@color/red_background_color"
+            android:gravity="center"
+            android:text="SAVE PREFERENCES"
+            android:textColor="@color/white_text_color" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

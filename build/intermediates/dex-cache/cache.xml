@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-8.4.0_57331bd92118771dac323bd14f7a103e816983af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-8.4.0_54248901af92630dfe629a32ff997654309bbb67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_bc77c84d377e9235e43b56764f845b226bf6a132/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-8.4.0_b8ee6d689f23c84a85ae230b8dc731c805dcbfc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/libs/httpclient-cache-4.3.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d96ec3034bd8429deaba77229183ffb1532edc1b">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpclient-cache-4.3.5_147d3f940dcb5f312c55deb80daa351a3814bff0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_b300c103baebb0e0306e2ad33a86eabf8de670c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-8.4.0_6880a5ddd50a92eadb89390e8bd152e152e80cf7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/libs/httpclient-4.3.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9783d89b8eea20a517a4afc5f979bd2882b54c44">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpclient-4.3.5_028fcb98836e4a22900865c122fb04fe8ded83c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-8.4.0_d113df51da41e5f92d3e1c06ba0c756dffd2b82a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.github.rtoshiro.fullscreenvideoview/fullscreenvideoview/1.1.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="69b39ad17a7e38a1b13e4e2334c24d4ef7ffe806">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.rtoshiro.fullscreenvideoview-fullscreenvideoview-1.1.2_26a0fd4b71856913c688c833ad25e6d6c9b46999/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-8.4.0_fd65da36f2e8af85e432e9eacf48a524fd3cd146/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.volley-volley-1.0.0_6f0d91b750afd2c7ae513a0bea80e0f84c881a4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-8.4.0_81facb6eaa14db873ef5e0d3bb5d25c2f47e0b89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-8.4.0_dc4b69166eb03d8887c4d3280172f14896c0080b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-8.4.0_52d942f774686577f60307719e7214232a38e713/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_1c2bc6f1fbb55039fef913c7d774719369009c2d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-8.4.0_96764e0b7512b52e2f7cf785c0dab841e3792c4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-8.4.0_b59659e5a01591f801d00d9deb99ec603a476336/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-8.4.0_547621f2a1b59126e2092f88cc454d06c1239758/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_14ff0d5652ef762b99dea53ca251fa1da72ade98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_37dca3bedc46873ecf20994fe20abbdf0e19165d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a8733948c7b2fe4ac1012d28917b1373ac863bb9">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_22ee6bcb0996f3a44ce9aa7af08c2393325c8922/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_39dd46f2d399472f8d71e35147461e02a3803822/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-8.4.0_6543436a0195bd1d9557944d1fba38178d338778/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-8.4.0_ab40985f77b23c1c6360a8da62e732a7e5f90d08/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-8.4.0_20434f3b8d1037579ad6b8aae23e3be7fe7fa2db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_26a2955c334001459bf79875abd4d7dc92a0dcd0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_26026e431faacf8ef31974538a0e51bc401c226c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_4c98c7c200253c5b0c611b1a8afb1f6ba3d518ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-8.4.0_aabe8fece5a53abb3d265490ebf179eb12049715/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/libs/httpcore-4.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="31fbbff1ddbf98f3aa7377c94d33b0447c646b6e">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpcore-4.3.2_f66d53ce61c35671bf1ae7d204b6fbf1e4f88c36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2fd18f4e7ecc9f2898bfb78c2629a0e606ed2e59">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_be1b3c9a55c70f459137ad562b34a95c3d813151/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_1a7775c81572dd622675b9b79b7da212567f1754/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_2307cb646f53695f26b1b716361cd4cdd7f354e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-measurement-8.4.0_3c20035f5e21c7bdcb73d2571b06947b684b68a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_09a9bae4222e657da03071f5899b83fd6d305eef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.4.0_3b470654355ee9f90516f5bf6a0f5fa6c8374762/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_03a4e787e7109f4066a03deec8aa2ff2ef29e7c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-8.4.0_a9f0c615dac6be042b20f9e4a7ae08bc535860b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-8.4.0_a62ba1171f3db66d20250d7fb0c6b39473bbdd77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/palette-v7/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a978650837318cf056bf3383ff02fe7a3b891f20">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-23.1.1_ccfcfd2532d1ac36c8be86564910a2a990c127d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Documents/Softwares/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_a7ba002b916d17e8b6bf7d7162ab9d8286e8c9d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/libs/httpmime-4.3.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1dd0d38df9c6d21e893f2e52403f1cd99e91cd81">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpmime-4.3.5_7d61831a05dbf2d7593263d99b149a0d451c05c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-8.4.0_a07c0303b833870057772b1d53ed1badc93d5c99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_2244b3aa3a2a1fb9015017d67de07d7287d440f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.rockerhieu.emojicon/library/1.3.3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bcca57571c432c186f738fccb93e4ca5bc02aada">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.rockerhieu.emojicon-library-1.3.3_5b7fcd3cb7ed3de969441b4334f0c00007de5f41/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.16.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="99d79164a8f983161bdb59b1403b9e4a1127aae1">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.16.1_155f24dd2481e85f198970b072940da19b1b124a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-23.4.0_9e2b99119692e992709ac1e42c3c05290f069732/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jupitor/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/jupitor/Desktop/Android_Project/shout appliation/ShoutApplication/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_60a27bb8dd3f1d24a0431cc7a5f2e7c7d84b2bc7/classes.dex" />
+    </item>
+
+</items>

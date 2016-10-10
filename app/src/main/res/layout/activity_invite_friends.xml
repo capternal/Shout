@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_root_invite_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.InviteFriendsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_request_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFCFC"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/invite_screen" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/loading_progress"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/contact_loading_icon" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loading_progress"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Quickly scanning through contact list..."
+                    android:textColor="#185376"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_updated_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFCFC"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_invite_contact_screen_top_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_skip_invite_friends"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@android:color/transparent"
+                        android:text="SKIP"
+                        android:textColor="#7D7D7D"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="ADD FRIENDS TO YOUR SHOUT BOOK"
+                        android:textColor="#185376"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_horizontal"
+                        android:text="The more  the merrier we say."
+                        android:textColor="#313131" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/edt_search_invite_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="#DCDCDC"
+                    android:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:searchIcon="@drawable/invite_search_icon" />
+
+                <ExpandableListView
+                    android:id="@+id/contact_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:childDivider="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp" />
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:indeterminateDrawable="@drawable/progress"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_give_them_a_shout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:background="@color/red_background_color"
+                android:text="Go to Shoutboard"
+                android:textColor="@color/white_text_color"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

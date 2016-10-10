@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/image_shout_detail_user_list_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/red_border"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_shout_detail_user_list_name"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_shout_detail_user_list_profile"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:paddingLeft="1dp"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_shout_detail_user_list_profile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_shout_detail_user_list_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_shout_detail_light_pink"
+                android:ellipsize="end"
+                android:minHeight="45dp"
+                android:padding="5dp"
+                android:scrollHorizontally="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txt_shout_detail_user_list_time_in_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

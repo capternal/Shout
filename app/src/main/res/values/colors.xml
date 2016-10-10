@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c60404</color>
+    <color name="colorPrimaryDark">#c60404</color>
+    <color name="colorAccent">#E62948</color>
+
+    <color name="white_text_color">#FFFFFF</color>
+    <color name="red_background_color">#E62948</color>
+    <color name="green_background_color">#1C721C</color>
+    <color name="contact_list_divider_color">#EFEFEF</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="custom_checkbox_color">#6E6E6E</color>
+
+    // SORT FILTER SCREEN
+    <color name="sort_filter_header_text_color">#605E5E</color>
+    <color name="sort_grey_color">#b5b5b5</color>
+    <color name="sort_red_color">@color/red_background_color</color>//#ef3c41
+    <color name="sortHeadingBackground">#EEEEEE</color>
+
+
+    // CREATE SHOUT SCREEN DATES
+    <color name="text_color_date_deselect">#868585</color>
+    <color name="text_color_date_select">@color/white_text_color</color>
+    <color name="background_color_date_deselect">#DCDCDC</color>
+    <color name="background_color_date_select">@color/red_background_color</color>
+
+    // SHOUT DEFAULT
+    <color name="text_color_shout_default_selected">@color/red_background_color</color>
+    <color name="text_color_shout_default_un_select">#9f9f9f</color>
+    <color name="text_color_shout_cell_top_date_time">#868686</color>
+
+    // COMMUNITY POPUP TEXT BACKGROUND FOR SELECTED / UNSELECTED
+    <color name="community_selected">#FFFFFF</color>
+    <color name="community_unselected">@color/red_background_color</color>
+
+
+</resources>

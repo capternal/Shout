@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    tools:context="com.shout.shoutapplication.main.ShoutUsersListActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_red_background_menu_users_list"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/relative_upper_base"
+        android:background="@color/red_background_color"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_arrow"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/image_button_shout_users_list_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+            android:id="@+id/txt_screen_shout_users_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_shout_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_red_background_menu_users_list"
+        android:divider="@null"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="0dp" />
+
+
+
+
+</RelativeLayout>

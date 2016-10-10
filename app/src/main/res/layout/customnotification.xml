@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_ordered_item_title_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="Order Received"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_ordered_item_title_description"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_reject_order_notification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:text="Reject"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_accept_order_notification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:text="Accept"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

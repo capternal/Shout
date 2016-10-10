@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_category_layout"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Select Birth Date"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_birth_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="DD/MM/YYYY"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_date_picker_popup_okay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_handshake_ok_button"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textColor="@color/white_text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

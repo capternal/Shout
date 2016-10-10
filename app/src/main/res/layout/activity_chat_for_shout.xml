@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shout.shoutapplication.main.ChatForShoutActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_red_background_menu_chat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/relative_upper_base"
+        android:background="@color/red_background_color"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image_chat_back"
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_arrow"
+                android:visibility="visible" />
+
+            <com.shout.shoutapplication.CustomClasses.CircularNetworkImageView
+                android:id="@+id/static_apponent_profile_image"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/image_chat_back"
+                android:scaleType="fitXY" />
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/image_button_shout_users_chat_back"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+            android:id="@+id/txt_screen_shout_chat_screen_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_button_shout_users_chat_back"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_chat_shout_details"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/relative_red_background_menu_chat"
+        android:background="#F2F2F2">
+
+
+        <ImageView
+            android:id="@+id/image_view_shout_pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/red_border"
+            android:scaleType="fitXY" />
+
+        <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+            android:id="@+id/txt_chat_shout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/image_view_shout_pic"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_chat_shout_title_arrow"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_chat_shout_title"
+            android:background="@drawable/back_arrow_red"
+            android:rotation="180"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/image_hand_shake"
+            android:layout_width="47dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/hand_shake"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameLayout"
+        android:layout_below="@+id/relativelayout_chat_shout_details"
+        android:background="#fcfcfc">
+
+        <ListView
+            android:id="@+id/listview_user_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relative_chat_bottom_view"
+            android:background="@null"
+            android:divider="@color/transparent"
+            android:dividerHeight="3dp"
+            android:listSelector="@color/transparent"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progress"
+            android:visibility="gone"></ProgressBar>
+
+        <RelativeLayout
+            android:id="@+id/relative_chat_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view_line_chat_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#c5c5c5"></View>
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/linear_chat_options"
+                android:background="@android:color/transparent"
+                android:gravity="left|top"
+                android:hint="@string/chat_hint"
+                android:imeOptions="normal"
+                android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                android:minHeight="80dp"
+                android:paddingTop="10dp"
+                android:singleLine="false"
+                android:textSize="15sp" />
+
+            <!-- <FrameLayout
+                 android:id="@+id/frameLayout"
+                 android:layout_below="@+id/msg"
+                 android:layout_width="match_parent"
+                 android:layout_height="250dp"
+                 android:visibility="visible" />
+ -->
+            <LinearLayout
+                android:id="@+id/linear_chat_options"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/chat_send"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/chat_open_media"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/chat_help"
+                    android:background="@drawable/create_screen_camera_grey"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/chat_help"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/chat_send"
+                    android:background="@drawable/chat_smile"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/chat_send"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/message_send_icon" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

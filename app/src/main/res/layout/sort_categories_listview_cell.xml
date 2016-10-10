@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FCFCFC"
+    android:orientation="horizontal"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/love"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:capitalize="words"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="Prasad Keskar"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageview_custom_checkbox_invite_screen"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/invite_blue_uncheckedbox"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/chk_tick"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:checked="false"
+        android:visibility="visible" />
+
+</RelativeLayout>

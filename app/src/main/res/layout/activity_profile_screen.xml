@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_profile_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.shout.shoutapplication.login.ProfileScreenActivity">
+
+
+    <!--yoga-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_edit_profile_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="EDIT YOUR PROFILE"
+                android:textColor="@color/red_background_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="First impressions are everything you know."
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_add_friends_to_shoutbook_profile_screen"
+            android:layout_below="@+id/linear_profile">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp">
+
+                            <EditText
+                                android:id="@+id/editTextFirstName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:inputType="textCapWords"
+                                android:textColor="#000"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editTextLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:fontFamily="sans-serif-light"
+                                android:inputType="textCapSentences"
+                                android:textColor="#000"
+                                android:textSize="28sp"
+                                android:textStyle="normal" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:orientation="horizontal">
+
+
+                                <ImageButton
+                                    android:id="@+id/imgbtn_gender"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:background="@color/transparent" />
+
+                                <ImageView
+                                    android:id="@+id/gender_image"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="2dp"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/txt_user_age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@+id/imgbtn_gender"
+                                    android:gravity="center|left"
+                                    android:text="0 YRS" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/profile_screen_user_image"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY" />
+
+                            <Button
+                                android:id="@+id/button_profile_screen_user_image"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/profile_icon_change"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:id="@+id/relative_profile_loading"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:visibility="gone">
+
+                                <ProgressBar
+                                    android:id="@+id/progress_bar_profile"
+                                    style="?android:attr/progressBarStyleLarge"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
+                                    android:indeterminateDrawable="@drawable/progress" />
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/current_city_icon" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_parent_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="DOB :"
+                                android:textSize="11sp" />
+
+                            <Button
+                                android:id="@+id/edt_profile_screen_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:clickable="true"
+                                android:editable="false"
+                                android:enabled="false"
+                                android:fontFamily="sans-serif-light"
+                                android:singleLine="true"
+                                android:textColor="#000000"
+                                android:textColorHint="#000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txt_profile_screen_bdate_error_message"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="please select your birth date."
+                                android:textColor="@color/red_background_color"
+                                android:textSize="10sp"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/current_city_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CURRENT CITY :"
+                                android:textSize="11sp" />
+
+                            <EditText
+                                android:id="@+id/edt_profile_screen_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:enabled="false"
+                                android:fontFamily="sans-serif-light"
+                                android:inputType="text|textCapSentences"
+                                android:singleLine="true"
+                                android:textColor="#000000"
+                                android:textColorHint="#000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/contact_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CONTACT NO :"
+                                android:textSize="11sp" />
+
+                            <EditText
+                                android:id="@+id/edt_profile_screen_contact_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:fontFamily="sans-serif-light"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:textColor="#000000"
+                                android:textColorHint="#000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/address_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ADDRESS :"
+                                android:textSize="11sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edt_profile_screen_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_toLeftOf="@+id/imageview_open_map_profile_screen"
+                                    android:background="@android:color/transparent"
+                                    android:enabled="false"
+                                    android:fontFamily="sans-serif-light"
+                                    android:gravity="left|top"
+                                    android:inputType="textMultiLine|textCapSentences"
+                                    android:paddingRight="5dp"
+                                    android:singleLine="false"
+                                    android:textColor="#000000"
+                                    android:textColorHint="#000"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageview_open_map_profile_screen"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="5dp"
+                                    android:src="@drawable/current_location_icon"
+                                    android:visibility="gone" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/email_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="EMAIL ID :"
+                                android:textSize="11sp" />
+
+                            <EditText
+                                android:id="@+id/edt_profile_screen_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:fontFamily="sans-serif-light"
+                                android:inputType="textCapSentences"
+                                android:textColor="#000000"
+                                android:textColorHint="#000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/some_thing_about" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="SOMETHING ABOUT YOURSELF :"
+                                android:textSize="11sp" />
+
+                            <EditText
+                                android:id="@+id/edt_profile_screen_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@android:color/transparent"
+                                android:enabled="false"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="left|top"
+                                android:inputType="textMultiLine|textCapSentences"
+                                android:singleLine="false"
+                                android:textColor="#000000"
+                                android:textColorHint="#000"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_next_screen_profile_sceen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/track_my_shouts" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:fontFamily="sans-serif-light"
+                                android:text="My Shouts"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:background="@drawable/track_my_shouts_next" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--The Layout in which the, shouts are being displayed.-->
+                    <LinearLayout
+                        android:id="@+id/linear_my_shouts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_add_friends_to_shoutbook_profile_screen"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red_background_color"
+            android:text="ADD FRIENDS TO YOUR SHOUTBOOK"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_profile_screen_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/map_profile_screen"
+            android:name="com.shout.shoutapplication.others.TouchableMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_top_map_search_bar_profile_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner_create_shout_map"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/search" />
+
+            <TextView
+                android:id="@+id/txt_map_address_profile_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="Vaishnav mata mandir marg, Indrayaninagar bhosari Pune"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/map_profile_screen_marker"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/map_loading_done_profile_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_map_done"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp"
+            android:text="SELECT ADDRESS"
+            android:textColor="#FFF" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_large_image_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/expanded_profile_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_bookmark"
+        android:icon="@drawable/create_screen_camera"
+        android:title="Bookmark" />
+
+    <item android:id="@+id/menu_save"
+        android:icon="@drawable/create_screen_camera"
+        android:title="Save" />
+
+    <item android:id="@+id/menu_search"
+        android:icon="@drawable/create_screen_camera"
+        android:title="Search" />
+
+    <item android:id="@+id/menu_share"
+        android:icon="@drawable/create_screen_camera"
+        android:title="Share" />
+
+    <item android:id="@+id/menu_delete"
+        android:icon="@drawable/create_screen_camera"
+        android:title="Delete" />
+
+    <item android:id="@+id/menu_preferences"
+        android:icon="@drawable/create_screen_camera"
+        android:title="Preferences" />
+
+</menu>

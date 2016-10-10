@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewPager_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:id="@+id/relative_middle_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/profile_image_shout_default"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_shout_default_time_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="February 19,20169 | 8.30 PM"
+                android:textColor="@color/text_color_shout_cell_top_date_time"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:id="@+id/relative_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_shout_detail_light_grey">
+
+                <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+                    android:id="@+id/txt_shout_default_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/img_shout_image"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-light"
+                    android:maxHeight="90dp"
+                    android:maxLines="4"
+                    android:padding="5dp"
+                    android:singleLine="false"
+                    android:text="Shout Title"
+                    android:textColor="#000"
+                    android:textSize="@dimen/shout_default_title_text_size" />
+
+                <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+                    android:id="@+id/txt_shout_default_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_shout_default_title"
+                    android:layout_toLeftOf="@+id/img_shout_image"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-light"
+                    android:maxHeight="90dp"
+                    android:maxLines="4"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="false"
+                    android:text="Shout Description Here..."
+                    android:textColor="#000"
+                    android:textSize="@dimen/shout_default_desc_text_size" />
+
+                <ImageView
+                    android:id="@+id/img_shout_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/image_shout_default_like"
+                        android:layout_width="@dimen/shout_default_height_width"
+                        android:layout_height="@dimen/shout_default_height_width"
+                        android:background="@drawable/like_grey" />
+
+                    <TextView
+                        android:id="@+id/txt_shout_default_like"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="LIKES"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/image_shout_default_share"
+                        android:layout_width="@dimen/shout_default_height_width"
+                        android:layout_height="@dimen/shout_default_height_width"
+                        android:background="@drawable/share_icon_grey" />
+
+                    <TextView
+                        android:id="@+id/txt_shout_default_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="SHARE"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="5dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/image_shout_default_comments"
+                        android:layout_width="@dimen/shout_default_height_width"
+                        android:layout_height="@dimen/shout_default_height_width"
+                        android:background="@drawable/comments_grey"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_shout_default_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|bottom"
+                        android:lineSpacingExtra="3dp"
+                        android:text="10 COMMENTS \n 3 ENGAGINGS"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profile_image_shout_default"
+            android:layout_width="@dimen/shout_default_profile_height_width"
+            android:layout_height="@dimen/shout_default_profile_height_width"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/blue_border"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_user_name_shout_default"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/profile_image_shout_default"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="right"
+            android:paddingLeft="1dp"
+            android:text="Prasanna"
+            android:textColor="#000"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

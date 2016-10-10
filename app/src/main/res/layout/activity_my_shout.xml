@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shout.shoutapplication.login.MyShoutActivity">
+
+    <Button
+        android:id="@+id/my_shouts_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red_background_color"
+        android:text="BACK"
+        android:textColor="@color/white_text_color" />
+
+    <ListView
+        android:id="@+id/my_shouts_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_shouts_back"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="18dp"></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No shouts"
+        android:visibility="gone" />
+
+</RelativeLayout>

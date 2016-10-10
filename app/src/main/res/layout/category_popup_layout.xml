@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_category_popup_outside_touch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95000000"></RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/rounded_category_layout"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_category_message"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="Please select a category"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progress"
+            android:visibility="visible"></ProgressBar>
+
+        <GridView
+            android:id="@+id/gridview_category"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/txt_category_message"
+            android:columnWidth="60dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:verticalSpacing="2dp"></GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gridview_category"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_category_popup_cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_handshake_cancel_button"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/btn_category_popup_okay"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_handshake_ok_button"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white_text_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

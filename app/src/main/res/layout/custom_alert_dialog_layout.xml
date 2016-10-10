@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:background="@drawable/top_bar1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_alert_top"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/facebook_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Confirmation"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#EBEAEA"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_alert_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_alert_top"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Do you want to exit Shout App ?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/txt_alert_message"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_alert_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingRight="25dp"
+            android:layout_toLeftOf="@+id/txt_alert_yes"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="No"
+            android:textColor="#CDCDCD" />
+
+        <TextView
+            android:id="@+id/txt_alert_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Yes"
+            android:textColor="#CDCDCD" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

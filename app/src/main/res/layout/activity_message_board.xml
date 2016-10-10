@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFCFC"
+        tools:context="com.shout.shoutapplication.main.MessageBoardActivity">
+
+        <RelativeLayout
+            android:id="@+id/relative_red_background_menu_message_board"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/relative_upper_base"
+            android:background="@color/red_background_color"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back_arrow"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/image_button_message_board_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:visibility="visible" />
+
+            <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+                android:id="@+id/txt_screen_message_board_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="MESSAGING BOARD"
+                android:textColor="@color/white_text_color"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview_message_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_red_background_menu_message_board"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone"></ListView>
+
+        <TextView
+            android:id="@+id/txt_no_shout_found_message_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Shout Found"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

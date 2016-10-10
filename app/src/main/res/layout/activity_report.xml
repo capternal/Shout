@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shout.shoutapplication.main.ReportActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <android.support.v7.widget.CardView
+                cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:elevation="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="50dp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="Report this shout"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Tell us what they did, We'll take\n care of it right away"
+                        android:textColor="#222222"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/report_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner_report"
+                        android:gravity="center"
+                        android:text="Inappropriate Messages"
+                        android:textAllCaps="false"
+                        android:textColor="#222222"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/report_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner_report"
+                        android:gravity="center"
+                        android:text="Obscene Images"
+                        android:textAllCaps="false"
+                        android:textColor="#222222"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/report_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner_report"
+                        android:gravity="center"
+                        android:text="The Person is Not Real"
+                        android:textAllCaps="false"
+                        android:textColor="#222222"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/report_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner_report"
+                        android:gravity="center"
+
+                        android:text="Not Relevent"
+                        android:textAllCaps="false"
+                        android:textColor="#222222"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_report_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/report_cross_icon" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

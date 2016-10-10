@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shout.shoutapplication.main.NotificationListActivity">
+
+    <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+        android:id="@+id/text_header_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red_background_color"
+        android:gravity="center"
+        android:text="NOTIFICATIONS"
+        android:textColor="@color/white_text_color" />
+
+    <ListView
+        android:id="@+id/listview_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_header_notifications"></ListView>
+
+    <TextView
+        android:id="@+id/txt_no_notification_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No notifications available" />
+
+
+</RelativeLayout>

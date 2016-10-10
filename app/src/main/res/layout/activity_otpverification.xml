@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:orientation="vertical"
+    tools:context="com.shout.shoutapplication.login.OTPVerificationActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_add_friends_to_shoutbook"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:text="OTP VERIFICATION"
+                android:textColor="#E72446"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="MOBILE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txt_select_country_otp_screen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/in"
+                    android:drawableRight="@drawable/down_arrow_fill"
+                    android:gravity="center"
+                    android:text="+91"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DCDCDC"></View>
+
+                <EditText
+                    android:id="@+id/edt_contact_number_otp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Contact Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="7dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="#DCDCDC"></View>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.3dp"
+                    android:background="#DCDCDC"></View>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="2"
+                    android:background="#DCDCDC"></View>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_resend_otp_otp_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@color/red_background_color"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="RESEND OTP"
+                android:textColor="@color/white_text_color"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/otp_verification_icon" />
+
+            <TextView
+                android:id="@+id/txt_otp_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Do 3 quick pushups while Uncle Ben\n here verifies your mobile number."
+                android:textColor="#111111"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_otp_code"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rounded_otp_red_border"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:hint="OTP HERE"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="#000000"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_otp_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="(In case he gets drunk again and forgets to do this for \nyou, please enter the OTP manually)"
+                    android:textColor="#333333"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btn_otp_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:background="@color/red_background_color"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="SUBMIT"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_otp_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/otp_verified" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_otp_failed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/otp_verification_failed" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="INCORRECT CODE"
+                    android:textColor="#E72446"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_friends_to_shoutbook"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E72446"
+        android:text="ADD FRIENDS TO YOUR SHOUTBOOK"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

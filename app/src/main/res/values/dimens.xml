@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="capture_shoot_popup_images_width">60dp</dimen>
+    <dimen name="sort_heading_padding_left">40dp</dimen>
+
+
+    //SHOUT DEFAULT LIST
+    <dimen name="shout_default_height_width">25dp</dimen>
+    <dimen name="shout_default_title_text_size">15sp</dimen>
+    <dimen name="shout_default_desc_text_size">13sp</dimen>
+    <dimen name="shout_default_profile_height_width">45dp</dimen>
+</resources>

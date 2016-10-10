@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_shoot_out_side_touch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_category_layout"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:text="Please select from the below options"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageViewVideo"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="@dimen/capture_shoot_popup_images_width"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/create_screen_shout"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageViewPhoto"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="@dimen/capture_shoot_popup_images_width"
+                android:layout_toRightOf="@+id/imageViewVideo"
+                android:background="@drawable/create_screen_camera" />
+
+            <ImageView
+                android:id="@+id/imageViewGallery"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="@dimen/capture_shoot_popup_images_width"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/imageViewPhoto"
+                android:background="@drawable/create_screen_upload" />
+
+            <ImageView
+                android:id="@+id/imageViewFacebook"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="@dimen/capture_shoot_popup_images_width"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/imageViewGallery"
+                android:background="@drawable/facebook_profile_icon"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:background="#FFF"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewVideo"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:gravity="center_horizontal"
+                android:text="VIDEO"
+                android:textColor="@color/red_background_color"
+                android:textSize="10sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textViewCamera"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/textViewVideo"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="PHOTO"
+                android:textColor="@color/red_background_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textViewGallery"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/textViewCamera"
+                android:gravity="center_horizontal"
+                android:text="GALLERY"
+                android:textColor="@color/red_background_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textViewfacebook"
+                android:layout_width="@dimen/capture_shoot_popup_images_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/textViewGallery"
+                android:gravity="center_horizontal"
+                android:text="FACEBOOK"
+                android:textColor="@color/red_background_color"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

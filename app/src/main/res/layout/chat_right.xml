@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/relative_profile_image"
+        android:background="@drawable/bubble"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/chat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_chat_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="left"
+                android:paddingLeft="18dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Lorem ipsum dolor "
+                android:textColor="#000"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/relative_admin_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/txt_admin_text_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Capternal A has requested you to accept sharing your product for this weekend. Please respond by clicking the button below."
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:id="@+id/linear_admin_no_accept_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_admin_text_message"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_cormer_chat_admin_accept_pass_border"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_admin_accept"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Accept"
+                        android:textColor="#000" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/red_background_color"></View>
+
+                    <TextView
+                        android:id="@+id/txt_admin_pass"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Pass"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/image_resource_chat_message"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/relative_resource_chat_image_loading"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/temp_chat_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/progress"
+                    android:visibility="visible"></ProgressBar>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_content"
+            android:layout_gravity="left"
+            android:paddingBottom="8dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="Feb 14 9:25 AM"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_profile_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.05"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/chat_profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_border"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

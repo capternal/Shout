@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "483344937684",
+    "project_id": "shout-1341"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483344937684:android:6005be47c408636f",
+        "android_client_info": {
+          "package_name": "com.shout.shoutapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKVtl9-WEc0G3vH5Sms4ol0hV6bIYo7PM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

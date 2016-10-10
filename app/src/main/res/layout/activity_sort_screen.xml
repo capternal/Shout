@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.shout.shoutapplication.main.SortScreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_red_background_menu_sort_filter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/relative_upper_base"
+        android:background="@color/red_background_color"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cancel_icon"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageViewSortFilterCancel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <com.shout.shoutapplication.CustomClasses.CustomFontTextView
+            android:id="@+id/textViewSortScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SORT \u0026 FILTER"
+            android:textColor="@color/white_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ok_icon"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageViewSortFilterOk"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_red_background_menu_sort_filter">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <!--Filter-->
+            <LinearLayout
+                android:id="@+id/linearLayoutFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/sortHeadingBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/sort_heading_padding_left"
+                    android:text="SORT"
+                    android:textColor="@color/sort_filter_header_text_color"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/linear_popularity_sort_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_view_popularity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sort_popularity_grey" />
+
+                        <TextView
+                            android:id="@+id/txt_popularity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Popularity"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_recency_sort_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_view_recency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sort_recency_grey" />
+
+                        <TextView
+                            android:id="@+id/txt_recency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Recency"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_location_sort_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image_view_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sort_location_grey" />
+
+                        <TextView
+                            android:id="@+id/txt_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Location"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/sortHeadingBackground"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/sort_heading_padding_left"
+                    android:text="FILTER"
+                    android:textColor="@color/sort_filter_header_text_color"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sort_money_grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Need to pay"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sort_available_for_free_grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Available for free"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <!-- <ImageView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/sort_location_red" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Location"
+                             android:textSize="12sp"
+                             android:layout_marginTop="10dp"/>-->
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Categories-->
+                <LinearLayout
+                    android:id="@+id/linearLayoutCategoriesSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/sortHeadingBackground"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.30"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/sort_heading_padding_left"
+                        android:text="CATEGORIES"
+                        android:textColor="@color/sort_filter_header_text_color"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image_view_sort_category_next_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.70"
+                        android:padding="15dp"
+                        android:src="@drawable/sort_arrow_grey" />
+
+
+                </LinearLayout>
+                <!--Availability-->
+                <LinearLayout
+                    android:id="@+id/linearLayoutAvailabilitySelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/sortHeadingBackground"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.30"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/sort_heading_padding_left"
+                        android:text="AVAILABILITY"
+                        android:textColor="@color/sort_filter_header_text_color"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image_view_sort_availability_next_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.70"
+                        android:padding="15dp"
+                        android:src="@drawable/sort_arrow_grey" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_clear_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/sortHeadingBackground"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.30"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/sort_heading_padding_left"
+                        android:text="CLEAR FILTER"
+                        android:textColor="@color/sort_filter_header_text_color"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/image_clear_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.70"
+                        android:padding="15dp"
+                        android:src="@drawable/grey_indicator_icon" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+        <!--Categories listview-->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="PICK ONE OR MORE :"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/categoriesListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+            </ListView>
+
+        </LinearLayout>
+        <!--Availability Calendar-->
+        <LinearLayout
+            android:id="@+id/linearLayoutAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_sort_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txt_pick_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick a start date :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_set_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/image_start_date_arrow"
+                    android:layout_toRightOf="@+id/txt_pick_start_date"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#605e5e"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_start_date_arrow"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/sort_arrow_grey"
+                    android:rotation="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_sort_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txt_pick_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick a end date :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_set_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/image_end_date_arrow"
+                    android:layout_toRightOf="@+id/txt_pick_end_date"
+                    android:gravity="left|center_vertical"
+                    android:textColor="#605e5e"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_end_date_arrow"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/sort_arrow_grey"
+                    android:rotation="0" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

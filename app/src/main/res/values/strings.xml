@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ShoutApplication</string>
+    <string name="facebook_app_id">245533149135297</string>
+    <string name="google_api_key">AIzaSyDaX-YgDk0FQN0OXEATUsIr8iAQiWG7oBY</string>
+    <string name="vertical_dots">:</string>
+    <string name="chat_hint">Send a message</string>
+    <string name="gcm_defaultSenderId">483344937684</string>
+
+    // CHAT SCREEN POPUP MENU ITEM NAMES
+    <string name="popup_action_1">I want to buy</string>
+    <string name="popup_action_2">I want to sale</string>
+</resources>
