@@ -180,7 +180,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
+                android:smoothScrollbar="true"
                 android:layout_marginRight="5dp"
+                android:scrollingCache="false"
+                android:animationCache="false"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="18dp"></ListView>
 

@@ -166,7 +166,7 @@ public class InviteFriendsActivity extends Activity implements View.OnClickListe
             continentList.add(continentFriends);
             Continent continentNotFriends = new Continent("DISPLAYING USERS NOT ON SHOUT ", NonFriendList);
             continentList.add(continentNotFriends);
-            listAdapter = new ContactExpandableListAdapter(InviteFriendsActivity.this,InviteFriendsActivity.this, continentList);
+            listAdapter = new ContactExpandableListAdapter(InviteFriendsActivity.this, InviteFriendsActivity.this, continentList);
             expListView.setAdapter(listAdapter);
             expandAll();
         } catch (NullPointerException ne) {
@@ -424,7 +424,7 @@ public class InviteFriendsActivity extends Activity implements View.OnClickListe
                 ArrayList<ContactModel> arrContactModel = new ArrayList<ContactModel>();
 
                 arrContactModel = objDatabaseHelper.getAllNonFriendsList();
-                for (int i=0;i<arrContactModel.size();i++){
+                for (int i = 0; i < arrContactModel.size(); i++) {
                     ContactModel objContactModel = arrContactModel.get(i);
                     JSONObject objNewJsonObject = new JSONObject();
                     objNewJsonObject.put("name", objContactModel.getContactName());
@@ -535,7 +535,7 @@ public class InviteFriendsActivity extends Activity implements View.OnClickListe
                     continentList.add(continentFriends);
                     Continent continentNotFriends = new Continent("DISPLAYING USERS NOT ON SHOUT ", NonFriendList);
                     continentList.add(continentNotFriends);
-                    listAdapter = new ContactExpandableListAdapter(InviteFriendsActivity.this,InviteFriendsActivity.this, continentList);
+                    listAdapter = new ContactExpandableListAdapter(InviteFriendsActivity.this, InviteFriendsActivity.this, continentList);
                     expListView.setAdapter(listAdapter);
                     //expand all Groups
                     expandAll();
@@ -694,7 +694,7 @@ public class InviteFriendsActivity extends Activity implements View.OnClickListe
                     continentList.add(continentFriends);
                     Continent continentNotFriends = new Continent("DISPLAYING USERS NOT ON SHOUT ", NonFriendList);
                     continentList.add(continentNotFriends);
-                    listAdapter = new ContactExpandableListAdapter(InviteFriendsActivity.this,InviteFriendsActivity.this, continentList);
+                    listAdapter = new ContactExpandableListAdapter(InviteFriendsActivity.this, InviteFriendsActivity.this, continentList);
                     expListView.setAdapter(listAdapter);
                     //expand all Groups
                     expandAll();

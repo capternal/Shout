@@ -75,16 +75,12 @@ public class ShoutDefaultListAdapter extends BaseAdapter implements Filterable, 
             LayoutInflater objLayoutInflater = (LayoutInflater) objContext.getSystemService(objContext.LAYOUT_INFLATER_SERVICE);
             convertView = objLayoutInflater.inflate(R.layout.shout_default_front_layout, parent, false);
             objViewHolder = new ViewHolder();
-
             objViewHolder.objViewPager = (CustomPager) convertView.findViewById(R.id.view_pager_shout_default_list_layout);
-
             convertView.setId(intPosition);
             convertView.setTag(objViewHolder);
-
         } else {
             objViewHolder = (ViewHolder) convertView.getTag();
         }
-
         ShoutDefaultViewPagerAdapter adapter = new ShoutDefaultViewPagerAdapter(objContext, objActivity, originalShoutDefaultModel, intPosition);
         adapter.setCallback(this);
 //        objViewHolder.objViewPager.setId(intPosition + getCount());

@@ -212,8 +212,8 @@ public class ShoutDefaultActivity extends BaseActivity implements View.OnClickLi
         initialize();
 
         try {
-            setDefaultItems();
             arrMyPreferencesModel = new ArrayList<MyPreferencesModel>();
+            setDefaultItems();
             String tag_json_obj = "json_obj_req";
             SharedPreferences objSharedPreferences = getSharedPreferences(Constants.PROFILE_PREFERENCES, MODE_PRIVATE);
             JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST, Constants.MY_PREFRENCES_API, new JSONObject().put("user_id", objSharedPreferences.getString(Constants.USER_ID, "")), new Response.Listener<JSONObject>() {
@@ -550,6 +550,7 @@ public class ShoutDefaultActivity extends BaseActivity implements View.OnClickLi
             }
         });
         objListViewShoutList = (ListView) findViewById(R.id.shout_default_listview);
+        objListViewShoutList.setFastScrollEnabled(true);
         mQuickReturnView = (RelativeLayout) findViewById(R.id.relative_grey_background_menu);
 
         setListener();
@@ -632,12 +633,14 @@ public class ShoutDefaultActivity extends BaseActivity implements View.OnClickLi
         objShoutDefaultSwipableLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                                                                @Override
                                                                public void onRefresh() {
+                                                                   state=objListViewShoutList.onSaveInstanceState();
                                                                    objDatabaseHelper.deleteUnFriendShouts();
                                                                    arrShoutDefaultListModel.clear();
                                                                    arrShoutDefaultListModel = objDatabaseHelper.getShoutDefaultListModelArray("0");
                                                                    objShoutDefaultListAdapter = new ShoutDefaultListAdapter(arrShoutDefaultListModel, ShoutDefaultActivity.this, ShoutDefaultActivity.this);
                                                                    objListViewShoutList.setAdapter(objShoutDefaultListAdapter);
                                                                    objShoutDefaultListAdapter.notifyDataSetChanged();
+                                                                   objListViewShoutList.onRestoreInstanceState(state);
                                                                    new StoreShoutDataForFirstTime("1").execute();
                                                                    objShoutDefaultSwipableLayout.setRefreshing(true);
                                                                }

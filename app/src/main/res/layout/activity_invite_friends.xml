@@ -114,6 +114,16 @@
 
                 </LinearLayout>
 
+                <ExpandableListView
+                    android:id="@+id/contact_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:childDivider="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp" />
+
                 <android.support.v7.widget.SearchView
                     android:id="@+id/edt_search_invite_friends"
                     android:layout_width="match_parent"
@@ -128,16 +138,6 @@
                     android:iconifiedByDefault="false"
                     app:queryBackground="@android:color/transparent"
                     app:searchIcon="@drawable/invite_search_icon" />
-
-                <ExpandableListView
-                    android:id="@+id/contact_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:childDivider="@android:color/transparent"
-                    android:divider="@android:color/transparent"
-                    android:dividerHeight="0dp" />
 
 
             </LinearLayout>
